@@ -1,0 +1,227 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  height: 100%;
+  background: var(--mint-gradient);
+}
+
+:root {
+  --mint-gradient: linear-gradient(135deg, #bfe4ea, #7fcfcf);
+  --primary-color: #006d77;
+  --secondary-color: #ffdd4a;
+  --accent-color: #83c5be;
+  --background-light: #bfe4ea;
+  --background-dark: #023047;
+  --text-light: #ffffff;
+  --text-dark: #001219;
+}
+
+/* Header */
+header {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo-section img {
+  max-width: 120px;
+  height: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: var(--secondary-color);
+}
+
+/* Intro Section */
+.intro-section {
+  background: var(--mint-gradient);
+  padding: 50px 20px;
+  text-align: center;
+  color: var(--text-dark);
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.intro-section h2 {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.intro-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: var(--text-light);
+  padding: 50px 20px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-form-section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  text-align: left;
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ffc107;
+  transform: scale(1.05);
+}
+
+/* Map Section */
+.map-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--mint-gradient);
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.map-section h3 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.map-section iframe {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Info Section */
+.contact-info-section {
+  background: linear-gradient(135deg, var(--background-dark), var(--primary-color));
+  color: var(--text-light);
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.contact-info-section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-info-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.contact-info-section ul li {
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  background: var(--background-dark);
+  text-align: center;
+  color: var(--text-light);
+  padding: 20px;
+  margin-top: auto;
+}
+
+footer .social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer .social-links li a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-links li a:hover {
+  color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+/* Button Styling */
+button, .btn-submit {
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .btn-submit:hover {
+  background-color: #ffc107;
+  transform: scale(1.05);
+}
